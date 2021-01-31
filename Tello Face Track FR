@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tello Face Track EN</title>
+      <link rel="icon" href="ailesrgb.png">
+      <!--importation de la bibliothèque CSS "Bootstrap"-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <!--police-->
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+      <!--CSS-->
+      <style>
+         *{
+         font-family: 'Nunito', sans-serif;
+         color: white;
+         }
+      </style>
+   </head>
+   <body class="bg-dark">
+      <!--Barre de navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <a class="navbar-brand" href="Tello Face Track EN.html">
+         <img src="ailesrgb.png" width="30" height="30"/>
+         TFT
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+               <a class="nav-item nav-link" href="TFT-doc EN.html">Documentation</a>
+               <a class="nav-item nav-link" href="TFT-install.html">Install</a>
+            </div>
+         </div>
+         <!--traduction-->
+         <a class="float-right text-right" href="Tello Face Track FR.html"><button type="button" style=""class="btn btn-outline-primary">EN->FR</button></a>
+      </nav>
+      <img src = forest-tello.png style="width: 100vw; position: fixed; z-index: -100">
+      <div style="margin: 50px; z-index: 100">
+         <!--Présentation commerciale-->
+         <br><br><br><br><br><br><br><br>
+         <div class="container float-center" style="width: 500px;">
+            <div class="col float-center">
+               <img src =logo-blanc-ailesrgb.png height="250" style:"margin-left: 100px"/>
+            </div>
+         </div>
+         <p>Tello Face Track is a program that adds facial recognition features to the DJI Tello. Similar functionality already exists on other drones of the DJI brand, this functionality is called ActiveTrack. However drones with this functionality are sold from 400 €, and via our program we can use similar functionalities with the Tello drone which is sold around 100 €.</p>
+      </div>
+   </body>
