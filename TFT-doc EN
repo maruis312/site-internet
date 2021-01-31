@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+   <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>TFT-doc EN</title>
+      <link rel="icon" href="ailesrgb.png">
+      <!--importation de la bibliothèque CSS "Bootstrap"-->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <!--police-->
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+      <!--CSS-->
+      <style>
+         *{font-family: 'Nunito', sans-serif;
+         color:white;
+         }
+         h2
+         {
+         color:#007bff;
+         }
+         h1
+         {
+         text-align:center;
+         color:red;
+         }
+      </style>
+   </head>
+   <body class="bg-dark">
+      <!--Barre de navigation-->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+         <a class="navbar-brand" href="Tello Face Track EN.html">
+         <img src="ailesrgb.png" width="30" height="30"/>
+         TFT
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+               <a class="nav-item nav-link" href="TFT-doc EN.html">Documentation</a>
+               <a class="nav-item nav-link" href="TFT-install.html">Install</a>
+            </div>
+         </div>
+         <a class="float-right text-right" href="TFT-doc FR.html"><button type="button" style=""class="btn btn-outline-primary">EN->FR</button></a>
+      </nav>
+      <div style="margin: 50px">
+      <h3 style="text-align:center;">How it works ?</h3>
+      <div style="text-align: center">
+         <img src="dronecompressed.gif"/>
+      </div>
+      <p>The program is based on python, we used the OpenCV, Numpy, Kivy and TelloPy libraries. Here are all the functions useful to our program as well as the classes :</p>
+      <h1>main.py</h1>
+      <h2>connect()</h2>
+      <p>Establish a connection with the drone.</p>
+      <h2>stream()</h2>
+      <p>Activate the data flow with the drone, to receive information such as the drone's battery, temperatures, etc.</p>
+      <h2>fluxvideo()</h2>
+      <p>Returns the video stream of the drone.</p>
+      <h2>sendcommand()</h2>
+      <p>Sends the coordinates of the face to command ().</p>
+      <h2>batterie()</h2>
+      <p>Returns the percentage of drone battery.</p>
+      <h2>start()</h2>
+      <p>Connects with the drone (connect ()), begins the exchange of data (stream ()) and initializes the video loop (update ()) which will repeat itself 24 times pr second.</p>
+      <h2>update()</h2>
+      <p>Capture the drone frame (fluxvideo ()), display the battery (battery ()), search for faces on the captured frame and return the coordinates (sendcommand ()), convert the frame to Kivy texture and return it to the interface graphic.</p>
+      <h2>take_photo()</h2>
+      <p>Take a photo, compress it in jpeg and save it on the gallery folder. The names of the images correspond to the precise date on which they were taken.</p>
+      <h2>takeoff()</h2>
+      <p>Takeoff of the drone.</p>
+      <h2>land()</h2>
+      <p>Drone landing.</p>
+      <h1>controller.py</h1>
+      <h2>command()</h2>
+      <p>Receives the coordinates of the face (as well as the "drone" object) and calls 3 functions simultaneously in order to center the face.</p>
+      <h2>align_x()</h2>
+      <p>Align the drone/face in the x axis (horizontal).</p>
+      <h2>align_y()</h2>
+      <p>Align the drone/face in the y axis (vertical).</p>
+      <H2>align_z()</H2>
+      <p>Align the drone/face in the z axis (distance from the face ≈ 60 inches).</p>
+      <h1>Classes</h1>
+      <h2>sManager</h2>
+      <p>Manage all the windows of the App.</p>
+      <h2>ScreenOne</h2>
+      <p>Homepage.</p>
+      <h2>ScreenTwo</h2>
+      <p>Instructions.</p>
+      <h2>CamPage</h2>
+      <p>Screen that displays the interface where the user can interact with the drone.</p>
+      <h2>DroneImg</h2>
+      <p>Layout that manages all the buttons and texts that interact with the drone.</p>
+      <h2>TelloFaceTrack</h2>
+      <p>Main app that contains the entire graphical interface.</p>
+   </body>
